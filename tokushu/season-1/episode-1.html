@@ -206,7 +206,7 @@ dle_menu_info();
     </div>
 </div><!-- header -->
 <div class="logo_b wrapper">
-    <a href="/" class="top_logo" title="Школа техник Наруто"><img src="images/logo_transparent.png" class="top_logo_img"></a>
+    <a href="/" class="top_logo" title="Школа техник Наруто"><img src="images/logo_transparent.png" class="top_logo_img"><div class="top_logo_slogan">Неправильный не я, а этот мир</div></a>
 
     
     
@@ -223,7 +223,43 @@ dle_menu_info();
 
 <div class="info_panel clear"><!-- info_panel --><div id="mobile_notice"><div class="notice_additional_id notice_additional_hide notice_additional"></div></div><div class="notice_additional_id notice_additional_hide notice_additional notice_additional_id_center"></div>
 
+    <a href="#login_panel" class="login_btn circle" title="Форма авторизации"><span>Войти</span><br>на сайт</a>
+    <div id="login_panel" class="login_panel">
+        <form class="login_panel_f" method="post" action name="main_login_form">
+            <div>
+                <input type="text" name="login_name" id="login_input1" placeholder="Логин или e-mail">
+            </div>
+            <div class="clear">
+                <input type="password" name="login_password" id="login_input2" placeholder="Пароль">
+                <a href="#" onclick="ShowThePass('no'); return false;" id="show_the_pass" title="Отобразить вводимый пароль">показать^</a>
+            </div>
+            <div>
+                <input type="submit" id="login_submit" value="Войти" onclick="submit();"><input name="login" type="hidden" value="submit">
+            </div>
+            <div class="clear lp_and_reg">
+                <a href="/lostpassword.html">Напомнить пароль</a>
+                <a href="/register.html">Регистрация</a>
+            </div>
+        </form>
+        <div id="vk_auth">
+            <div class="vf_button_site vf_button_primary_site tin" style="margin-top: 20px;" id="auth_via_vk">Войти через ВКонтакте</div>
+        </div>
+</div>
 
+    <div id="search_b">
+        <form action="/search/" method="POST" target="_self" class="search"><input type="hidden" name="makeme" value="yes">
+            <input type="text" name="ystext">
+            <input type="submit" value="Найти">
+        </form>
+    </div>
+    <ul class="social_links">
+        
+        <li style="display: none; "><a class="telegram_i circle" id="jutsu_telegram_link" href="/to/telegram" target="_blank" title="Telegram-канал Школы техник Наруто">Telegram</a></li>
+        <li class="plus_i_li"><a class="plus_i circle" href="/plus/" title="Jutsu+">Jutsu+</a></li>
+        <li class="jutsu_vk_link_li"><a class="vk_i circle" id="jutsu_vk_link" href="/to/vk" target="_blank" title="Школа техник Наруто ВКонтакте">ВКонтакте</a></li>
+        <li><a class="yt_i circle" id="jutsu_yt_link" href="/to/youtube" target="_blank" title="Youtube-канал Школы техник Наруто">Youtube</a></li>
+        <li><a id="slide_sidebar_btn" class="nav_i circle" href="#" onclick="do_me_a_sidebar(); return false; "><i></i></a></li>
+    </ul>
 </div><!--end info_panel -->
 <div class="main wrapper z_fix">
     
@@ -243,6 +279,8 @@ dle_menu_info();
                         
                         
 
+                        
+                        <div class="top_banner_yand"><div id="the_jeday-547400-2"></div></div>
                         
                         
 
@@ -291,11 +329,11 @@ $(document).ready(function() {
 
 
 </div></div></div><div class="border_around_video is-no-top-left-border no-top-right-border">
-<video id="my-player" class="video-js vjs-default-skin vjs-16-9" controls preload="none" poster="https://r22118.kujo-jotaro.com/tokyo-ghoul/1/1.1080.9407e05f1630b9a5.mp4">
-<source src="https://r310101.kujo-jotaro.com/tokyo-ghoul/1/1.1080.9407e05f1630b9a5.mp4?hash1=2ade3d677b80c40c4f4a2043b22d92ed&hash2=630723c0d66b4dedaa952b367b4f0641" type="video/mp4" lang="ru" label="1080p" res="1080">
-<source src="https://r310101.kujo-jotaro.com/tokyo-ghoul/1/1.720.01c6d6090b6b8819.mp4?hash1=abd845b8e09b5d8c851ea3fe9eb56c9f&hash2=0b23005a5aa47352ee3b57867f566edb" type="video/mp4" lang="ru" label="720p" res="720">
-<source src="https://r310101.kujo-jotaro.com/tokyo-ghoul/1/1.480.05d969c4080e34c7.mp4?hash1=f8b390cae5b28a102e9d40886652b3ca&hash2=d290a470d1abb657a086922e3fb91b63" type="video/mp4" lang="ru" label="480p" res="480" selected="true">
-<source src="https://r310101.kujo-jotaro.com/tokyo-ghoul/1/1.360.12af410269318002.mp4?hash1=4b456a797a312ad84d817259d33e3c82&hash2=dc335d229355e7e41c30ecd06985db2d" type="video/mp4" lang="ru" label="360p" res="360">
+<video id="my-player" class="video-js vjs-default-skin vjs-16-9" controls preload="none" poster="https://gen.jut.su/uploads/preview/17/0/1/1_1537353122.jpg">
+<source src="https://r22118.kujo-jotaro.com/tokyo-ghoul/1/1.1080.9407e05f1630b9a5.mp4?hash1=bf7d44cc5b8b150e25503a9aad13a2d1" type="video/mp4" lang="ru" label="1080p" res="1080">
+<source src="https://r22118.kujo-jotaro.com/tokyo-ghoul/1/1.720.01c6d6090b6b8819.mp4?hash1=d29c563c32f6409bb3fee1038ca661e5" type="video/mp4" lang="ru" label="720p" res="720">
+<source src="https://r22118.kujo-jotaro.com/tokyo-ghoul/1/1.480.05d969c4080e34c7.mp4?hash1=f8d5e655bf8a296f12f563f0398a7856" type="video/mp4" lang="ru" label="480p" res="480" selected="true">
+<source src="https://r22118.kujo-jotaro.com/tokyo-ghoul/1/1.360.12af410269318002.mp4?hash1=1e12d21c3f7019042c74dfc37b775419" type="video/mp4" lang="ru" label="360p" res="360">
 
 <p class="vjs-no-js">
 Чтобы посмотреть видео, пожалуйста, включите поддержку JavaScript или обновите ваш браузер
@@ -348,10 +386,22 @@ eval( Base64.decode( "dmFyIHNvbWVfYWNoaXZfc3RyID0gImRtRnlJSFJvYVhOZllXNXBiV1ZmWV
                         <li><a class="active" href="/anime/">Аниме</a></li>
                         
                         
-
+                        
+                        <li><a href="/forum/">Форум</a></li>
+                        <li><a href="/wiki/">Нарутопедия</a></li>
                         <li class="snl_group_last"><span></span></li>
 
-
+                        <li><a href="/naruuto/">Смотреть Наруто</a></li>
+                        <li><a href="/manga/">Манга Наруто</a></li>
+                        <li><a href="/novels/">Новеллы Наруто</a></li>
+                        <li><a href="/stories/">Видео-истории</a></li>
+                        <li><a href="/reviews/">Видео-обзоры</a></li>
+                        
+                        
+                        <li><a href="/ninja/">Все герои</a></li>
+                        
+                        <li><a href="/by-episodes/">Список техник</a></li>
+                        <!-- <li><a href="/seals/">Ручные печати</a></li> -->
                         <li class="snl_group_last"><span></span></li>
 
                         
@@ -379,13 +429,281 @@ eval( Base64.decode( "dmFyIHNvbWVfYWNoaXZfc3RyID0gImRtRnlJSFJvYVhOZllXNXBiV1ZmWV
                 
 
                 
+                <div class="widget side_banner_yand" style="position: relative;"><!-- widget 1-->
+                    <div id="the_jeday-547400-3"></div>
+                </div>
 
-                <br>
+                
+
+                
+                <noindex><div class="widget id_for_minichat" style="position: relative; "><!-- widget 2--><div class="mchat_wrap_out"><div class="mchat_wrap">
+                            <input type="checkbox" id="mini_chat_turn" onchange="hide_the_chat();">
+                            <label class="mchat_slider-v2" for="mini_chat_turn"></label>
+                        </div></div>
+                        <div class="b-b-g-title"><span>Чат</span></div>
+                        <div class="inwidget_cont_chat hide_the_chat"><script type="text/javascript">
+<!--
+var iChat_cfg = ["300", "60"];
+
+var iChat_lang = ["Редактирование сообщения", "Введите новый текст сообщения", "Ошибка", "Введите текст сообщения.", "Вы ввели слишком длинный комментарий.", "Принимаю", "Сохранить настройки", "Очистить БД", "Проверить обновления"];
+
+
+//-->
+</script><form method="post" name="iChat_form" id="iChat_form" class="iChat iChat_form" action="/">
+
+
+<div class="the_refresh_button"></div>
+
+
+    
+
+<div id="iChat-style" style="height:300px; overflow:auto;"><div id="iChat-messages" class="iChat-messages"><div class="message">
+
+<div class="avatar"><span></span><img src="images/foto_1895803_0052d458b0.png" alt="The_Devil_Shadow"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('The_Devil_Shadow', '/user/The_Devil_Shadow/'); return false;" href="/user/The_Devil_Shadow/"><span class="group_kage">The_Devil_Shadow</span></a></b></div><br>19:00:52</div>
+
+<hr>
+
+<div class="text"><b>The_Fresh</b>, <!--smile:fellow--><img style="vertical-align: middle;border: none;" alt="fellow" src="images/fellow.gif"><!--/smile--></div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2203270_526392e3b2.jpg" alt="Naruko_Uzumaki"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('Naruko_Uzumaki', '/user/Naruko_Uzumaki/'); return false;" href="/user/Naruko_Uzumaki/"><span class="group_chunin">Naruko_Uzumaki</span></a></b></div><br>19:00:47</div>
+
+<hr>
+
+<div class="text"><b>The_Fresh</b>, здравствуй</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_930689_d0fded252d.png" alt="The_Fresh"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('The_Fresh', '/user/The_Fresh/'); return false;" href="/user/The_Fresh/"><span class="group_kage">The_Fresh</span></a></b></div><br>19:00:16</div>
+
+<hr>
+
+<div class="text">Драстуте.</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_732061_1c56b7fbc9.jpg" alt="Kagamo"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('Kagamo', '/user/Kagamo/'); return false;" href="/user/Kagamo/"><span class="group_chunin">Kagamo</span></a></b></div><br>18:59:32</div>
+
+<hr>
+
+<div class="text"><b>equilisss</b>, испание вбив спаниш испания</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_1842457_613c912e56.jpeg" alt="DEADDD444"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('DEADDD444', '/user/DEADDD444/'); return false;" href="/user/DEADDD444/"><span class="group_chunin">DEADDD444</span></a></b></div><br>18:58:44</div>
+
+<hr>
+
+<div class="text">лол</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2135181_463dc36e32.jpg" alt="equilisss"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('equilisss', '/user/equilisss/'); return false;" href="/user/equilisss/"><span class="group_chunin">equilisss</span></a></b></div><br>18:58:34</div>
+
+<hr>
+
+<div class="text"><b>equilisss</b>, что с моей клавой емае</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2135181_463dc36e32.jpg" alt="equilisss"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('equilisss', '/user/equilisss/'); return false;" href="/user/equilisss/"><span class="group_chunin">equilisss</span></a></b></div><br>18:58:03</div>
+
+<hr>
+
+<div class="text">я учу испанский. я ща я переводчике вбил я живу в Испании и он не так написал</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2234820_a75bb965cb.jpg" alt="Schmetterlinge"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('Schmetterlinge', '/user/Schmetterlinge/'); return false;" href="/user/Schmetterlinge/"><span class="group_genin">Schmetterlinge</span></a></b></div><br>18:57:36</div>
+
+<hr>
+
+<div class="text">Warum?</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><span></span><img src="images/foto_1895803_0052d458b0.png" alt="The_Devil_Shadow"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('The_Devil_Shadow', '/user/The_Devil_Shadow/'); return false;" href="/user/The_Devil_Shadow/"><span class="group_kage">The_Devil_Shadow</span></a></b></div><br>18:57:29</div>
+
+<hr>
+
+<div class="text"><b>Kristi_love52</b>, спокойной.)<br><b>equilisss</b>, (((</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_1842457_613c912e56.jpeg" alt="DEADDD444"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('DEADDD444', '/user/DEADDD444/'); return false;" href="/user/DEADDD444/"><span class="group_chunin">DEADDD444</span></a></b></div><br>18:57:17</div>
+
+<hr>
+
+<div class="text">лол</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2135181_463dc36e32.jpg" alt="equilisss"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('equilisss', '/user/equilisss/'); return false;" href="/user/equilisss/"><span class="group_chunin">equilisss</span></a></b></div><br>18:57:09</div>
+
+<hr>
+
+<div class="text"><b>equilisss</b>, ?</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2135181_463dc36e32.jpg" alt="equilisss"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('equilisss', '/user/equilisss/'); return false;" href="/user/equilisss/"><span class="group_chunin">equilisss</span></a></b></div><br>18:56:56</div>
+
+<hr>
+
+<div class="text"><b>Kristi_love52</b>, vivo en Espa?a</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_1555211_02d7463ce1.jpg" alt="Kristi_love52"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('Kristi_love52', '/user/Kristi_love52/'); return false;" href="/user/Kristi_love52/"><span class="group_chunin">Kristi_love52</span></a></b></div><br>18:56:09</div>
+
+<hr>
+
+<div class="text"><b>equilisss</b>, sorry don&#039;t understand you</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2135181_463dc36e32.jpg" alt="equilisss"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('equilisss', '/user/equilisss/'); return false;" href="/user/equilisss/"><span class="group_chunin">equilisss</span></a></b></div><br>18:55:41</div>
+
+<hr>
+
+<div class="text"><b>Kristi_love52</b>, buenas noches</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div><div class="message">
+
+<div class="avatar"><img src="images/foto_2203270_526392e3b2.jpg" alt="Naruko_Uzumaki"></div>
+
+<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('Naruko_Uzumaki', '/user/Naruko_Uzumaki/'); return false;" href="/user/Naruko_Uzumaki/"><span class="group_chunin">Naruko_Uzumaki</span></a></b></div><br>18:55:39</div>
+
+<hr>
+
+<div class="text"><b>The_Devil_Shadow</b>, да скучно</div>
+
+<div align="right">
+
+
+
+</div>
+
+</div></div></div><br>
 
 
 
 
 
+<div class="ui-state-nostate ui-corner-all" style="padding:9px;">Только зарегистрированные посетители могут писать в чате.<div class="clr"></div></div>
 
 
 
@@ -402,8 +720,24 @@ eval( Base64.decode( "dmFyIHNvbWVfYWNoaXZfc3RyID0gImRtRnlJSFJvYVhOZllXNXBiV1ZmWV
 
                 <div class="media_b clear">
                     
+                    <div class="media_content rand_tech_widget">
+					<div class="b-g-title">Случайная <span>техника</span></div>
+					<div id="laststoryhere" style="height: 132px;">
+<a class="media_link l_e_m_l" href="https://jut.su/technique/sovmestnoe-prevraschenie.html">
+<img src="images/1385182055_sovmestnoe-prevraschenie.jpg" style="margin-top: 0;">
+<span>Совместное превращение</span>
+</a>
+					</div>
 				</div>
                 </div>
+
+                <noindex><div class="kstati_widget_out"><div class="widget kstati_widget"><!-- widget -->
+                            <div class="rh_full_over"><div class="rh_full_layer"><div class="b-b-g-title rh_click">Кстати<span>,</span></div>
+                                    <span class="random_hint">чтобы быстро открыть любую серию второго сезона Наруто, вам достаточно набрать после <b>jut.su</b>/ <b>её номер</b>, - например <b><a href="/166">jut.su/166</a></b><div class="rh_id">1</div></span></div></div>
+                        </div></div><!-- end widget --></noindex>
+
+                
+
             </div><!--end sidebar -->
             
         
@@ -428,9 +762,19 @@ eval( Base64.decode( "dmFyIHNvbWVfYWNoaXZfc3RyID0gImRtRnlJSFJvYVhOZllXNXBiV1ZmWV
 </a>
 <meta itemprop="position" content="3">
 </li>
-
+</ol>
+    <ul class="footer_nav">
+        <li style="margin-left: 0;"><a href="/">Главная</a></li>
+        <li><a href="/anime/" class="active">Все аниме</a></li>
+        <li><a href="/naruuto/">Все серии Наруто</a></li>
+        <li><a href="/manga/">Манга Наруто</a></li>
+        <li><a href="/by-episodes/">Все техники</a></li>
+        <li><a href="/mail/">Аниме-почта</a></li>
+        <li><a href="/subscription/">Рассылка обновлений</a></li>
+        <li style="margin-right: 0;"><a href="/feedback.html">Контакты</a></li>
+    </ul>
 </div>
-
+<div class="set_full_view wrapper z_fix"><a href="#" onclick="set_full_view('yes'); return false;" title="Открыть полную версию сайта"><span>Полная версия</span></a></div>
 
 <style type="text/css">
     body.dark_mode {
