@@ -129,7 +129,7 @@ dle_menu_info();
     </div>
 </div><!-- header -->
 <div class="logo_b wrapper">
-    <a href="/" class="top_logo" title="Школа техник Наруто"><img src="images/logo_transparent.png" class="top_logo_img"><div class="top_logo_slogan">Я гуль</div></a>
+    <a href="/" class="top_logo" title="Школа техник Наруто"></a>
 
     
     
@@ -145,43 +145,10 @@ dle_menu_info();
 </div>
 
 <div class="info_panel clear"><!-- info_panel --><div id="mobile_notice"><div class="notice_additional_id notice_additional_hide notice_additional"></div></div><div class="notice_additional_id notice_additional_hide notice_additional notice_additional_id_center"></div>
-
-    <a href="#login_panel" class="login_btn circle" title="Форма авторизации"><span>Войти</span><br>на сайт</a>
-    <div id="login_panel" class="login_panel">
-        <form class="login_panel_f" method="post" action name="main_login_form">
-            <div>
-                <input type="text" name="login_name" id="login_input1" placeholder="Логин или e-mail">
-            </div>
-            <div class="clear">
-                <input type="password" name="login_password" id="login_input2" placeholder="Пароль">
-                <a href="#" onclick="ShowThePass('no'); return false;" id="show_the_pass" title="Отобразить вводимый пароль">показать^</a>
-            </div>
-            <div>
-                <input type="submit" id="login_submit" value="Войти" onclick="submit();"><input name="login" type="hidden" value="submit">
-            </div>
-            <div class="clear lp_and_reg">
-                <a href="/lostpassword.html">Напомнить пароль</a>
-                <a href="/register.html">Регистрация</a>
-            </div>
-        </form>
-        <div id="vk_auth">
-            <div class="vf_button_site vf_button_primary_site tin" style="margin-top: 20px;" id="auth_via_vk">Войти через ВКонтакте</div>
-        </div>
-</div>
-
-    <div id="search_b">
-        <form action="/search/" method="POST" target="_self" class="search"><input type="hidden" name="makeme" value="yes">
-            <input type="text" name="ystext">
-            <input type="submit" value="Найти">
-        </form>
-    </div>
     <ul class="social_links">
         
         <li style="display: none; "><a class="telegram_i circle" id="jutsu_telegram_link" href="/to/telegram" target="_blank" title="Telegram-канал Школы техник Наруто">Telegram</a></li>
-        <li class="plus_i_li"><a class="plus_i circle" href="/plus/" title="Jutsu+">Jutsu+</a></li>
-        <li class="jutsu_vk_link_li"><a class="vk_i circle" id="jutsu_vk_link" href="/to/vk" target="_blank" title="Школа техник Наруто ВКонтакте">ВКонтакте</a></li>
-        <li><a class="yt_i circle" id="jutsu_yt_link" href="/to/youtube" target="_blank" title="Youtube-канал Школы техник Наруто">Youtube</a></li>
-        <li><a id="slide_sidebar_btn" class="nav_i circle" href="#" onclick="do_me_a_sidebar(); return false; "><i></i></a></li>
+        
     </ul>
 </div><!--end info_panel -->
 <div class="main wrapper z_fix">
@@ -252,11 +219,11 @@ $(document).ready(function() {
 
 
 </div></div></div><div class="border_around_video is-no-top-left-border no-top-right-border">
-<video id="my-player" class="video-js vjs-default-skin vjs-16-9" controls preload="none" poster="https://gen.jut.su/uploads/preview/17/0/1/1_1537353122.jpg">
-<source src="https://r190103.kujo-jotaro.com/tokyo-ghoul/1/1.1080.9407e05f1630b9a5.mp4?hash1=36864bccf039664f747deec6616f0711" type="video/mp4" lang="ru" label="1080p" res="1080">
-<source src="https://r190103.kujo-jotaro.com/tokyo-ghoul/1/1.720.01c6d6090b6b8819.mp4?hash1=aedfdd0eb284f0ebed5d1c07dd1c8953" type="video/mp4" lang="ru" label="720p" res="720">
-<source src="https://r190103.kujo-jotaro.com/tokyo-ghoul/1/1.480.05d969c4080e34c7.mp4?hash1=79e6a596a1cf0c5b9490fb5ca08f8e72" type="video/mp4" lang="ru" label="480p" res="480" selected="true">
-<source src="https://r190103.kujo-jotaro.com/tokyo-ghoul/1/1.360.12af410269318002.mp4?hash1=02d5a2814533265971299f28e5dbf0de" type="video/mp4" lang="ru" label="360p" res="360">
+    <video id="my-player" class="video-js vjs-default-skin vjs-16-9" controls preload="none" poster="https://gen.anilink.tk/uploads/preview/17/0/1/1_1537353122.jpg">
+        <source src="http://f0731011.xsph.ru/ghoul/1.1300.mp4" type="video/mp4" lang="ru" label="1080p" res="1080">
+        <source src="http://f0731011.xsph.ru/ghoul/1.720.01c6d6090b6b8819.mp4" type="video/mp4" lang="ru" label="720p" res="720">
+        <source src="http://f0731011.xsph.ru/ghoul/1.480.05d969c4080e34c7.mp4" type="video/mp4" lang="ru" label="480p" res="480" selected="true">
+        <source src="http://f0731011.xsph.ru/ghoul/1.360.12af410269318002.mp4" type="video/mp4" lang="ru" label="360p" res="360">
 
 <p class="vjs-no-js">
 Чтобы посмотреть видео, пожалуйста, включите поддержку JavaScript или обновите ваш браузер
@@ -308,30 +275,12 @@ eval( Base64.decode( "dmFyIHNvbWVfYWNoaXZfc3RyID0gImRtRnlJSFJvYVhOZllXNXBiV1ZmWV
                         
                         <li><a class="active" href="/anime/">Аниме</a></li>
                         
-                        
-                        
-                        <li><a href="/forum/">Форум</a></li>
-                        <li><a href="/wiki/">Нарутопедия</a></li>
-                        <li class="snl_group_last"><span></span></li>
-
-                        <li><a href="/naruuto/">Смотреть Наруто</a></li>
-                        <li><a href="/manga/">Манга Наруто</a></li>
-                        <li><a href="/novels/">Новеллы Наруто</a></li>
-                        <li><a href="/stories/">Видео-истории</a></li>
-                        <li><a href="/reviews/">Видео-обзоры</a></li>
-                        
-                        
-                        <li><a href="/ninja/">Все герои</a></li>
-                        
-                        <li><a href="/by-episodes/">Список техник</a></li>
-                        <!-- <li><a href="/seals/">Ручные печати</a></li> -->
                         <li class="snl_group_last"><span></span></li>
 
                         
                         <li><a href="/jobs/">Вакансии</a></li>
                         
                         <li><a href="/subscription/">Оповещения ВК и TG</a></li>
-                        <li><a href="/mail/">Аниме-почта</a></li>
                         
                         
                         <li><a href="/feedback.html">Наши контакты</a></li>
@@ -351,20 +300,11 @@ eval( Base64.decode( "dmFyIHNvbWVfYWNoaXZfc3RyID0gImRtRnlJSFJvYVhOZllXNXBiV1ZmWV
 
                 
 
-                
-                <div class="widget side_banner_yand" style="position: relative;"><!-- widget 1-->
-                    <div id="the_jeday-547400-3"></div>
-                </div>
 
                 
 
                 
-                <noindex><div class="widget id_for_minichat" style="position: relative; "><!-- widget 2--><div class="mchat_wrap_out"><div class="mchat_wrap">
-                            <input type="checkbox" id="mini_chat_turn" onchange="hide_the_chat();">
-                            <label class="mchat_slider-v2" for="mini_chat_turn"></label>
-                        </div></div>
-                        <div class="b-b-g-title"><span>Чат</span></div>
-                        <div class="inwidget_cont_chat hide_the_chat"><script type="text/javascript">
+
 <!--
 var iChat_cfg = ["300", "60"];
 
@@ -372,261 +312,13 @@ var iChat_lang = ["Редактирование сообщения", "Введи
 
 
 //-->
-</script><form method="post" name="iChat_form" id="iChat_form" class="iChat iChat_form" action="/">
+</script>
 
 
-<div class="the_refresh_button"></div>
 
 
-    
 
-<div id="iChat-style" style="height:300px; overflow:auto;"><div id="iChat-messages" class="iChat-messages"><div class="message">
 
-<div class="avatar"><span></span><img src="images/foto_1895803_0052d458b0.png" alt="The_Devil_Shadow"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('The_Devil_Shadow', '/user/The_Devil_Shadow/'); return false;" href="/user/The_Devil_Shadow/"><span class="group_kage">The_Devil_Shadow</span></a></b></div><br>18:39:24</div>
-
-<hr>
-
-<div class="text"><b>ariat_</b>, сори, но я тебе привет написал, не знаю, видел ты или нет.....</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1988644_fb16bd881a.jpg" alt="lizixs"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('lizixs', '/user/lizixs/'); return false;" href="/user/lizixs/"><span class="group_student">lizixs</span></a></b></div><br>18:39:12</div>
-
-<hr>
-
-<div class="text"><b>ferky21</b>, пон</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1853290_c4fde61f0f.png" alt="ariat_"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('ariat_', '/user/ariat_/'); return false;" href="/user/ariat_/"><span class="group_kage">ariat_</span></a></b></div><br>18:39:05</div>
-
-<hr>
-
-<div class="text"><b>lizixs</b>, превет</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><span></span><img src="images/foto_433991_1602266a48.png" alt="ferky21"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('ferky21', '/user/ferky21/'); return false;" href="/user/ferky21/"><span class="group_kage">ferky21</span></a></b></div><br>18:38:57</div>
-
-<hr>
-
-<div class="text">как говорится, самое сладкое всегда мало</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1469018_352a98ee26.png" alt="REDUCT"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('REDUCT', '/user/REDUCT/'); return false;" href="/user/REDUCT/"><span class="group_sannin">REDUCT</span></a></b></div><br>18:38:56</div>
-
-<hr>
-
-<div class="text"><!--smile:wink--><img style="vertical-align: middle;border: none;" alt="wink" src="images/wink.gif"><!--/smile--></div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1853290_c4fde61f0f.png" alt="ariat_"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('ariat_', '/user/ariat_/'); return false;" href="/user/ariat_/"><span class="group_kage">ariat_</span></a></b></div><br>18:38:53</div>
-
-<hr>
-
-<div class="text"><b>The_Devil_Shadow</b>, капец ты<br>я тут сижу скучаю по тебе</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1469018_352a98ee26.png" alt="REDUCT"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('REDUCT', '/user/REDUCT/'); return false;" href="/user/REDUCT/"><span class="group_sannin">REDUCT</span></a></b></div><br>18:38:45</div>
-
-<hr>
-
-<div class="text"><i> <!--smile:wink--><img style="vertical-align: middle;border: none;" alt="wink" src="images/wink.gif"><!--/smile--> </i></div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/noavatar.png" alt="logsfg"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('logsfg', '/user/logsfg/'); return false;" href="/user/logsfg/"><span class="group_student">logsfg</span></a></b></div><br>18:38:43</div>
-
-<hr>
-
-<div class="text"><b>kumigaru</b>, блич</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><span></span><img src="images/foto_1895803_0052d458b0.png" alt="The_Devil_Shadow"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('The_Devil_Shadow', '/user/The_Devil_Shadow/'); return false;" href="/user/The_Devil_Shadow/"><span class="group_kage">The_Devil_Shadow</span></a></b></div><br>18:38:42</div>
-
-<hr>
-
-<div class="text"><b>Uhia Ben</b>, не грусти, Братец.)</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1285564_6bdfb2810b.jpg" alt="Беатрисс Визеу"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('%C1%E5%E0%F2%F0%E8%F1%F1+%C2%E8%E7%E5%F3', '/user/%C1%E5%E0%F2%F0%E8%F1%F1+%C2%E8%E7%E5%F3/'); return false;" href="/user/%C1%E5%E0%F2%F0%E8%F1%F1+%C2%E8%E7%E5%F3/"><span class="group_kage">Беатрисс Визеу</span></a></b></div><br>18:38:37</div>
-
-<hr>
-
-<div class="text"><b>logsfg</b>, да</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1469018_352a98ee26.png" alt="REDUCT"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('REDUCT', '/user/REDUCT/'); return false;" href="/user/REDUCT/"><span class="group_sannin">REDUCT</span></a></b></div><br>18:38:34</div>
-
-<hr>
-
-<div class="text"><!--smile:wink--><img style="vertical-align: middle;border: none;" alt="wink" src="images/wink.gif"><!--/smile--></div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><span></span><img src="images/foto_1803235_0be51e35bb.png" alt="Uhia Ben"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('Uhia+Ben', '/user/Uhia+Ben/'); return false;" href="/user/Uhia+Ben/"><span class="group_kage">Uhia Ben</span></a></b></div><br>18:38:26</div>
-
-<hr>
-
-<div class="text"><!--smile:sad--><img style="vertical-align: middle;border: none;" alt="sad" src="images/sad.gif"><!--/smile--></div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1822626_ffa231bfdc.jpg" alt="kumigaru"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('kumigaru', '/user/kumigaru/'); return false;" href="/user/kumigaru/"><span class="group_chunin">kumigaru</span></a></b></div><br>18:38:15</div>
-
-<hr>
-
-<div class="text">ребята чо придложите</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><span></span><img src="images/foto_1895803_0052d458b0.png" alt="The_Devil_Shadow"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('The_Devil_Shadow', '/user/The_Devil_Shadow/'); return false;" href="/user/The_Devil_Shadow/"><span class="group_kage">The_Devil_Shadow</span></a></b></div><br>18:38:13</div>
-
-<hr>
-
-<div class="text"><b>ariat_</b>, пушта я ещё с основы не зашёл.(</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div><div class="message">
-
-<div class="avatar"><img src="images/foto_1988644_fb16bd881a.jpg" alt="lizixs"></div>
-
-<div class="info"><div class="ichat_info_author"><b><a onclick="ShowProfile('lizixs', '/user/lizixs/'); return false;" href="/user/lizixs/"><span class="group_student">lizixs</span></a></b></div><br>18:38:11</div>
-
-<hr>
-
-<div class="text">превет</div>
-
-<div align="right">
-
-
-
-</div>
-
-</div></div></div><br>
-
-
-
-
-
-<div class="ui-state-nostate ui-corner-all" style="padding:9px;">Только зарегистрированные посетители могут писать в чате.<div class="clr"></div></div>
 
 
 
@@ -641,23 +333,9 @@ var iChat_lang = ["Редактирование сообщения", "Введи
 
                 
 
-                <div class="media_b clear">
-                    
-                    <div class="media_content rand_tech_widget">
-					<div class="b-g-title">Случайная <span>техника</span></div>
-					<div id="laststoryhere" style="height: 132px;">
-<a class="media_link l_e_m_l" href="https://jut.su/technique/dvoynaya-chernaya-pantera.html">
-<img src="images/1381557237_dvoinaya-chernaya-pantera.jpg" style="margin-top: 0;">
-<span>Двойная черная пантера</span>
-</a>
-					</div>
-				</div>
-                </div>
+    
 
-                <noindex><div class="kstati_widget_out"><div class="widget kstati_widget"><!-- widget -->
-                            <div class="rh_full_over"><div class="rh_full_layer"><div class="b-b-g-title rh_click">Кстати<span>,</span></div>
-                                    <span class="random_hint">чтобы быстро открыть любую серию второго сезона Наруто, вам достаточно набрать после <b>jut.su</b>/ <b>её номер</b>, - например <b><a href="/496">jut.su/496</a></b><div class="rh_id">1</div></span></div></div>
-                        </div></div><!-- end widget --></noindex>
+
 
                 
 
@@ -689,10 +367,6 @@ var iChat_lang = ["Редактирование сообщения", "Введи
     <ul class="footer_nav">
         <li style="margin-left: 0;"><a href="/">Главная</a></li>
         <li><a href="/anime/" class="active">Все аниме</a></li>
-        <li><a href="/naruuto/">Все серии Наруто</a></li>
-        <li><a href="/manga/">Манга Наруто</a></li>
-        <li><a href="/by-episodes/">Все техники</a></li>
-        <li><a href="/mail/">Аниме-почта</a></li>
         <li><a href="/subscription/">Рассылка обновлений</a></li>
         <li style="margin-right: 0;"><a href="/feedback.html">Контакты</a></li>
     </ul>
